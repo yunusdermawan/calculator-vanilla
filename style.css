@@ -2,4 +2,74 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    place-items: center;
+    display: grid;
+}
+
+.container {
+    background: #f19066;
+    width: 40vw;
+    height: 60vh;
+    border-radius: 7px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.result {
+    width: 40%;
+    height: 10%;
+    display: block;
+    position: relative;
+    padding: 25px 40px;
+    left: 60%;
+}
+
+.result h1 {
+    color: #ffffff;
+    font-size: 45px;
+}
+
+.pads {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 4px;
+    padding: 12px;
+}
+
+.pads button {
+    min-width: 6.5em;
+    min-height: 5em;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 3px .5px 3px #596275;
+    cursor: pointer;
+}
+
+.ac, .zero, .equalsTo {
+    width: 13.3em !important;
+}
+
+.ac {
+    background: #546de5;
+    color: #ffffff;
+}
+
+.equalsTo {
+    background: #303952;
+    color: #ffffff;
+}
+
+.operator {
+    background: #f7d794;
+    color: #ffffff;
 }

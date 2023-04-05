@@ -5,9 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Oswald&family=Poppins:wght@200;400;600;800&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <title>Calculator Vanilla</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="">
+            <div class="wrapper">
+                <div class="result">
+                    <h1 calss="opsDisplay">000</h1>
+                    <h1 class="afterOps">111</h1>
+                </div>
+                <div class="pads">
+                        <button class="ac" id="clear" onclick="calculator()">AC</button>
+                        <button class="operator" id="/">/</button>
+                        <button class="operator" id="*">X</button>
+                        <button id="seven">7</button>
+                        <button id="eight">8</button>
+                        <button id="nine">9</button>
+                        <button class="operator" id="-">-</button>
+                        <button id="four">4</button>
+                        <button id="five">5</button>
+                        <button id="six">6</button>
+                        <button class="operator" id="+">+</button>
+                        <button id="one">1</button>
+                        <button id="two">2</button>
+                        <button id="three">3</button>
+                        <button class="operator" id=".">.</button>
+                        <button id="zero" class="zero">0</button>
+                        <button class="equalsTo" id="=">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
