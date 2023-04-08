@@ -14,32 +14,36 @@
     <div class="container">
         <div class="">
             <div class="wrapper">
-                <div class="result">
-                    <h1 calss="opsDisplay">000</h1>
-                    <h1 class="afterOps">111</h1>
-                </div>
-                <div class="pads">
-                        <button class="ac" id="clear" onclick="calculator()">AC</button>
-                        <button class="operator" id="/">/</button>
-                        <button class="operator" id="*">X</button>
-                        <button id="seven">7</button>
-                        <button id="eight">8</button>
-                        <button id="nine">9</button>
-                        <button class="operator" id="-">-</button>
-                        <button id="four">4</button>
-                        <button id="five">5</button>
-                        <button id="six">6</button>
-                        <button class="operator" id="+">+</button>
-                        <button id="one">1</button>
-                        <button id="two">2</button>
-                        <button id="three">3</button>
-                        <button class="operator" id=".">.</button>
-                        <button id="zero" class="zero">0</button>
-                        <button class="equalsTo" id="=">=</button>
-                </div>
+                <form>
+                    <div class="display">
+                        <input type="text" name="display">
+                    </div>
+                    <div class="pads">
+                            <input type="button" class="ac" value="AC">
+                            <input type="button" class="operator" value="/">
+                            <input type="button" class="operator" value="*">
+                            <input type="button" value="7" onclick="display.value += '7' ">
+                            <input type="button" value="8" onclick="display.value += '8' ">
+                            <input type="button" value="9" onclick="display.value += '9' ">
+                            <input type="button" class="operator" value="+">
+                            <input type="button" value="4" onclick="display.value += '4' ">
+                            <input type="button" value="5" onclick="display.value += '5' ">
+                            <input type="button" value="6" onclick="display.value += '6' ">
+                            <input type="button" class="operator" value="-">
+                            <input type="button" value="1" onclick="display.value += '1' ">
+                            <input type="button" value="2" onclick="display.value += '2' ">
+                            <input type="button" value="3" onclick="display.value += '3' ">
+                            <input type="button" class="operator" value=".">
+                            <input type="button" class="zero" value="0" onclick="display.value += '0' ">
+                            <input type="button" class="equalsTo" value="=">
+                    </div>
+                </form>                
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script>
+       
+        
+    </script>
 </body>
 </html>

@@ -6,15 +6,15 @@
 }
 
 body {
-    min-height: 100vh;
+    height: 100vh;
     place-items: center;
     display: grid;
 }
 
 .container {
     background: #f19066;
-    width: 40vw;
-    height: 60vh;
+    max-width: 385px;
+    max-height: 60vh;
     border-radius: 7px;
 }
 
@@ -23,18 +23,20 @@ body {
     flex-direction: column;
 }
 
-.result {
-    width: 40%;
-    height: 10%;
-    display: block;
-    position: relative;
+.display {
+    height: 100px;
+    display: flex;
     padding: 25px 40px;
-    left: 60%;
 }
 
-.result h1 {
+.display input[type=text] {
     color: #ffffff;
+    background: #f19066;
     font-size: 45px;
+    height: 100px;
+    width: 100%;
+    border: none;
+    text-align: right;
 }
 
 .pads {
@@ -46,17 +48,19 @@ body {
     padding: 12px;
 }
 
-.pads button {
-    min-width: 6.5em;
-    min-height: 5em;
+input[type=button] {
+    min-width: 87px;
+    min-height: 67px;
     border-radius: 5px;
     border: none;
-    box-shadow: 3px .5px 3px #596275;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     cursor: pointer;
+    font-size: 30px;
+    
 }
 
 .ac, .zero, .equalsTo {
-    width: 13.3em !important;
+    width: 178px!important;
 }
 
 .ac {
