@@ -59,6 +59,11 @@ input[type=button] {
     
 }
 
+input[type=button]:hover {
+    font-size: 40px;
+    transform: scale(1);
+}
+
 .ac, .zero, .equalsTo {
     width: 178px!important;
 }
